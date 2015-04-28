@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+@mixin font-size( $decimal-size, $keyword: null ) {
+  @if $keyword{ font-size: $keyword; }
+  @else { font-size: $decimal-size * $base-font-multiplier * 16px;}
+  font-size: $decimal-size * 1rem;
+}
+
+@mixin transform ($rotate: 90deg, $scale: 1, $skew: 1deg, $translate: 10px) {
+    -webkit-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+    -moz-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+    -o-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+    -ms-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+    transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+}
+
+@mixin box-shadow ($x: 0px, $y: 3px, $blur: 5px, $alpha: 0.5) {
+    -webkit-box-shadow: $x $y $blur rgba(0, 0, 0, $alpha);
+    -moz-box-shadow: $x $y $blur rgba(0, 0, 0, $alpha);
+    box-shadow: $x $y $blur rgba(0, 0, 0, $alpha);
+}
+
+@mixin border-radius ($radius: 5px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}

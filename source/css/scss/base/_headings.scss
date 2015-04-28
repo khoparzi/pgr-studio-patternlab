@@ -1,0 +1,35 @@
+/* Headings */
+/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
+h1, .alpha   { 
+	line-height: 1.2;
+	color: $blue;
+}
+
+h2, .beta    { 
+	line-height: 1.2;
+	color: $green;
+}
+
+h3, .gamma   { 
+	line-height: 1.2;
+	color: $pink;
+}
+
+h4, .delta   {
+	color: $red;
+}
+
+h5, .epsilon { 
+	color: $blue-complement;
+}
+
+h6, .zeta    { 
+	color: $blue-complement2;
+}
+
+/* Subheadings */
+.subheading {
+	font-family: $font-secondary;
+	color: $blue-complement;
+	font-weight: normal;
+}
