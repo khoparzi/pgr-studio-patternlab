@@ -888,19 +888,20 @@ td {
   clear: both;
   overflow: hidden;
   max-height: 0;
+  width: 72em;
 }
-/* line 16, scss/objects/_nav.scss */
+/* line 17, scss/objects/_nav.scss */
 .nav a {
   color: #fff;
   display: block;
   padding: 1em;
   border-bottom: 1px solid #eee;
 }
-/* line 23, scss/objects/_nav.scss */
+/* line 24, scss/objects/_nav.scss */
 .nav a:hover {
   background: #12181E;
 }
-/* line 27, scss/objects/_nav.scss */
+/* line 28, scss/objects/_nav.scss */
 .nav.active {
   color: #12181E;
   max-height: 40em;
@@ -911,11 +912,11 @@ td {
     max-height: none;
     clear: none;
   }
-  /* line 36, scss/objects/_nav.scss */
+  /* line 37, scss/objects/_nav.scss */
   .nav li {
     float: left;
   }
-  /* line 40, scss/objects/_nav.scss */
+  /* line 41, scss/objects/_nav.scss */
   .nav a {
     border: 0;
   }
@@ -924,7 +925,6 @@ td {
   /* line 10, scss/objects/_nav.scss */
   .nav {
     margin-top: 30px;
-    width: 50em;
   }
   /* line 50, scss/objects/_nav.scss */
   .nav li {

@@ -12,6 +12,7 @@
 	clear: both;
 	overflow: hidden;
 	max-height: 0;
+	width: $max-width;
 	
 	a {
 		color: $white;
@@ -45,7 +46,6 @@
 
 	@media all and (min-width: $bp-large) {
 		margin-top: 30px;
-		width: $bp-large;
 
 		li {
 			border-top: 1px solid $gray;
