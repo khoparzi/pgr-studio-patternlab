@@ -137,8 +137,25 @@
 	}
 }
 
+.blackbar {
+	@extend .cf;
+	@extend .g-max5;
+}
+.blackbar ul {
+	list-style: none;
+	li {
+		float: left;
+		padding: 0 20px;
+	}
+	li a:hover {
+		background: $gray;
+		color: $white;
+	}
+}
+
 .date-list {
 	list-style-type: square;
+	@extend .cf;
 }
 .box {
 	display: block;
