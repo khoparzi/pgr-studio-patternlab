@@ -1,101 +1,27 @@
 <ul class="block date-list">
 
-	<li class="box monthYear" id="Apr15">
-		<a class="dateLink" href="#2015/04">
-			<span>Apr</span><br>
-			2015		</a>
-	</li>
+	{{> atoms-month-year(month-year: "Apr15", month-year-link: "#2015/04", month: "Apr", year: "2015") }}
+	
+	{{> atoms-day-time(category-classes: "seminar", event-link: "#2015/04", day: "22", dayofweek: "Wed", title: "This is a seminar")}}
+
+	{{> atoms-month-year(month-year:"Jun15", month-year-link:"#2015/06", month:"Jun", year:"2015")}}
 
 	
-	<li class="box postEvent cat-item-7 cat-item-9">
-		<a href="#2015/04/lorem-ipsum-dolor-sit-amet-11/">
-			<span class="theDay">22</span><br>
-			<p class="theTitle">
-				<span>Wed @ 1:14 am</span><br>
-				Standing on the Shoulders of Giants			</p>
-		</a>                    
-	</li>
-	
+	{{> atoms-day-time(category-classes: "seminar", event-link: "#2015/06", day: "02", dayofweek: "Tue", title: "This is b seminar")}}
 
-	<li class="box monthYear" id="Jun15">
-		<a class="dateLink" href="#2015/06">
-			<span>Jun</span><br>
-			2015		</a>
-	</li>
+	{{> atoms-day-time(category-classes: "workshop", event-link: "#2015/06", day: "25", dayofweek: "Thu", title: "This is c workshop")}}
 
-	
-	<li class="box postEvent cat-item-7 cat-item-11">
-		<a href="#2015/06/lorem-ipsum-dolor-sit-amet-12/">
-			<span class="theDay">02</span><br>
-			<p class="theTitle">
-				<span>Tue @ 4:42 am</span><br>
-				How To Be Better Than You			</p>
-		</a>                    
-	</li>
-	
-	
-	<li class="box postEvent cat-item-8 cat-item-7">
-		<a href="#2015/06/lorem-ipsum-dolor-sit-amet-3/">
-			<span class="theDay">25</span><br>
-			<p class="theTitle">
-				<span>Thu @ 7:08 pm</span><br>
-				Deadmau5 Destroys Downtown			</p>
-		</a>                    
-	</li>
-	
-	
-	<li class="box postEvent cat-item-7 cat-item-19 cat-item-11">
-		<a href="#2015/06/lorem-ipsum-dolor-sit-amet-13/">
-			<span class="theDay">30</span><br>
-			<p class="theTitle">
-				<span>Tue @ 4:43 am</span><br>
-				Cyan &amp; Collis Ta’eed Book Signing!			</p>
-		</a>                    
-	</li>
-	
+	{{> atoms-day-time(category-classes: "conference", event-link: "#2015/06", day: "30", dayofweek: "Tue", time: "4:43 pm" title: "This is d conference")}}
 
-	<li class="box monthYear" id="Aug15">
-		<a class="dateLink" href="#2015/08">
-			<span>Aug</span><br>
-			2015		</a>
-	</li>
+	{{> atoms-month-year(month-year:"Aug15", month-year-link:"#2015/08", month:"Aug", year:"2015")}}
 
-	
-	<li class="box postEvent cat-item-7 cat-item-11">
-		<a href="#2015/08/lorem-ipsum-dolor-sit-amet-14/">
-			<span class="theDay">20</span><br>
-			<p class="theTitle">
-				<span>Thu @ 4:44 am</span><br>
-				Why Do We Tweet?			</p>
-		</a>                    
-	</li>
-	
-	
-	<li class="box postEvent cat-item-8 cat-item-7">
-		<a href="#2015/08/lorem-ipsum-dolor-sit-amet/">
-			<span class="theDay">20</span><br>
-			<p class="theTitle">
-				<span>Thu @ 7:07 pm</span><br>
-				Tool Performs at the Showbox			</p>
-		</a>                    
-	</li>
-	
-	
-	<li class="box postEvent cat-item-7 cat-item-9">
-		<a href="#2015/08/lorem-ipsum-dolor-sit-amet-2/">
-			<span class="theDay">25</span><br>
-			<p class="theTitle">
-				<span>Tue @ 7:08 pm</span><br>
-				Seven Samurai			</p>
-		</a>                    
-	</li>
-	
+	{{> atoms-day-time(category-classes: "seminar", event-link: "#2015/08", day: "20", dayofweek: "Thu", time: "4:44 pm", title: "Why Do We Tweet?")}}
 
-	<li class="box monthYear" id="Nov15">
-		<a class="dateLink" href="#2015/11">
-			<span>Nov</span><br>
-			2015		</a>
-	</li>
+	{{> atoms-day-time(category-classes: "networking", event-link: "#2015/08", day: "20", dayofweek: "Thu", time: "7:07 pm", title: "Where?")}}
+
+	{{> atoms-day-time(category-classes: "screening", event-link: "#2015/08", day: "25", dayofweek: "Tue", time: "7:08 pm", title: "Seven Samurai")}}
+
+	{{> atoms-month-year(month-year:"Nov15", month-year-link:"#2015/11", month:"Nov", year:"2015")}}
 
 	
 	<li class="box postEvent cat-item-7 cat-item-9">
@@ -128,11 +54,7 @@
 	</li>
 	
 
-	<li class="box monthYear" id="Mar16">
-		<a class="dateLink" href="#2016/03">
-			<span>Mar</span><br>
-			2016		</a>
-	</li>
+	{{> atoms-month-year(month-year:"Mar16", month-year-link:"#2016/03", month:"Mar", year:"2016")}}
 
 	
 	<li class="box postEvent cat-item-7 cat-item-11">
@@ -165,11 +87,7 @@
 	</li>
 	
 
-	<li class="box monthYear" id="Dec16">
-		<a class="dateLink" href="#2016/12">
-			<span>Dec</span><br>
-			2016		</a>
-	</li>
+	{{> atoms-month-year(month-year:"Dec16", month-year-link:"#2016/12", month:"Dec", year:"2016")}}
 
 	
 	<li class="box postEvent cat-item-7 cat-item-19 cat-item-9">
@@ -202,11 +120,7 @@
 	</li>
 	
 
-	<li class="box monthYear" id="Dec17">
-		<a class="dateLink" href="#2017/12">
-			<span>Dec</span><br>
-			2017		</a>
-	</li>
+	{{> atoms-month-year(month-year:"Dec17", month-year-link:"#2017/12", month:"Dec", year:"2017")}}
 
 	
 	<li class="box postEvent cat-item-7 cat-item-10">
