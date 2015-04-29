@@ -1,6 +1,41 @@
 <!-- Begin Footer -->
 <footer class="footer" role="contentinfo">
 	<div class="lc">
+		<div class="g-4up">
+			{{> atoms-footer-contact }}
+			<div class="gi">
+				<h1>Latest Posts</h1>
+				<ul class="post-list">
+					{{# latest-posts }}
+						<li>{{> molecules-media-block(excerpt: false) }}</li>
+					{{/ latest-posts }}
+				</ul>
+			</div>
+			<div class="gi">
+				<h1>Latest Posts</h1>
+				<ul class="post-list">
+					{{# latest-posts }}
+						<li>{{> molecules-media-block(excerpt: false) }}</li>
+					{{/ latest-posts }}
+				</ul>
+			</div>
+			<div class="gi">
+				<h1>Tags</h1>
+				<ul class="tag-list">
+					<li>design</li>
+					<li>film cultures</li>
+					<li>ethnography</li>
+					<li>fashion</li>
+				</ul>
+				<h1>Categories</h1>
+				<ul class="category-list">
+					<li>seminars</li>
+					<li>workshops</li>
+					<li>conferences</li>
+					<li>networking</li>
+				</ul>
+			</div>
+		</div>
 		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
 	</div>
 </footer>

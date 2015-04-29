@@ -176,7 +176,7 @@
 	color: #000;
 }
 .monthYear {
-	background-color: $yellow;
+	background-color: darken($red, 25%);
 	text-transform: uppercase;
 	font-size: 24px;
 	cursor: default;
@@ -187,7 +187,7 @@
 }
 .monthYear a.dateLink {
 	padding: 0;
-	color: $gray;
+	color: $white;
 	padding-top: 40px;
 	height: 110px;
 	width: 100%;

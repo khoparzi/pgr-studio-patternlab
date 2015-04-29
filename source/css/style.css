@@ -864,6 +864,13 @@ td {
   overflow: hidden;
   max-height: 0;
 }
+/* line 41, scss/objects/_header.scss */
+.search-form input {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin-right: 1em;
+}
 @media all and (min-width: 46.8em) {
   /* line 37, scss/objects/_header.scss */
   .search-form {
@@ -878,11 +885,12 @@ td {
 \*------------------------------------*/
 /* line 5, scss/objects/_nav.scss */
 .top-widget {
-  padding: 2em;
+  float: right;
+  padding: 2em 5em;
   min-height: 6em;
 }
 
-/* line 10, scss/objects/_nav.scss */
+/* line 11, scss/objects/_nav.scss */
 .nav {
   background: #121920;
   clear: both;
@@ -890,62 +898,62 @@ td {
   max-height: 0;
   width: 72em;
 }
-/* line 17, scss/objects/_nav.scss */
+/* line 18, scss/objects/_nav.scss */
 .nav a {
   color: #fff;
   display: block;
   padding: 1em;
   border-bottom: 1px solid #eee;
 }
-/* line 24, scss/objects/_nav.scss */
+/* line 25, scss/objects/_nav.scss */
 .nav a:hover {
   background: #12181E;
 }
-/* line 28, scss/objects/_nav.scss */
+/* line 29, scss/objects/_nav.scss */
 .nav.active {
   color: #12181E;
   max-height: 40em;
 }
 @media all and (min-width: 46.8em) {
-  /* line 10, scss/objects/_nav.scss */
+  /* line 11, scss/objects/_nav.scss */
   .nav {
     max-height: none;
     clear: none;
   }
-  /* line 37, scss/objects/_nav.scss */
+  /* line 38, scss/objects/_nav.scss */
   .nav li {
     float: left;
   }
-  /* line 41, scss/objects/_nav.scss */
+  /* line 42, scss/objects/_nav.scss */
   .nav a {
     border: 0;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 10, scss/objects/_nav.scss */
+  /* line 11, scss/objects/_nav.scss */
   .nav {
     margin-top: 30px;
   }
-  /* line 50, scss/objects/_nav.scss */
+  /* line 51, scss/objects/_nav.scss */
   .nav li {
     border-top: 1px solid #808080;
   }
 }
 
-/* line 57, scss/objects/_nav.scss */
+/* line 58, scss/objects/_nav.scss */
 .pagination {
   overflow: hidden;
 }
-/* line 60, scss/objects/_nav.scss */
+/* line 61, scss/objects/_nav.scss */
 .pagination li {
   float: left;
   border-right: 1px solid #eee;
 }
-/* line 64, scss/objects/_nav.scss */
+/* line 65, scss/objects/_nav.scss */
 .pagination li:last-child {
   border: 0;
 }
-/* line 69, scss/objects/_nav.scss */
+/* line 70, scss/objects/_nav.scss */
 .pagination a {
   padding: 1em;
 }
@@ -974,30 +982,60 @@ td {
 .footer a {
   color: #f9f9f9;
 }
+/* line 14, scss/objects/_footer.scss */
+.footer .gi {
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1);
+  padding: 1em;
+}
+/* line 18, scss/objects/_footer.scss */
+.footer h1 {
+  color: #fff;
+  font-size: 1.2em;
+  border-bottom: 2px solid #E82829;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+/* line 25, scss/objects/_footer.scss */
+.footer h2 {
+  color: #fff;
+  font-size: 1em;
+  font-weight: normal;
+  padding-top: 1em;
+}
+/* line 31, scss/objects/_footer.scss */
+.footer p {
+  color: #808080;
+  font-size: 0.8em;
+}
+/* line 35, scss/objects/_footer.scss */
+.footer .adr {
+  font-size: 0.8em;
+  color: #fff;
+}
 
-/* line 17, scss/objects/_footer.scss */
+/* line 43, scss/objects/_footer.scss */
 .nav-footer {
   margin: -1em -1em 1em;
 }
-/* line 20, scss/objects/_footer.scss */
+/* line 46, scss/objects/_footer.scss */
 .nav-footer li {
   border-bottom: 1px solid #333;
 }
 @media all and (min-width: 46.8em) {
-  /* line 20, scss/objects/_footer.scss */
+  /* line 46, scss/objects/_footer.scss */
   .nav-footer li {
     border: 0;
     float: left;
   }
 }
-/* line 29, scss/objects/_footer.scss */
+/* line 55, scss/objects/_footer.scss */
 .nav-footer a {
   display: block;
   padding: 1em;
 }
 
 @media all and (min-width: 46.8em) {
-  /* line 35, scss/objects/_footer.scss */
+  /* line 61, scss/objects/_footer.scss */
   .copyright {
     float: right;
   }
@@ -1448,7 +1486,7 @@ td {
 
 /* line 178, scss/objects/_blocks.scss */
 .monthYear {
-  background-color: #FFF70B;
+  background-color: #830e0f;
   text-transform: uppercase;
   font-size: 24px;
   cursor: default;
@@ -1463,7 +1501,7 @@ td {
 /* line 188, scss/objects/_blocks.scss */
 .monthYear a.dateLink {
   padding: 0;
-  color: #808080;
+  color: #fff;
   padding-top: 40px;
   height: 110px;
   width: 100%;

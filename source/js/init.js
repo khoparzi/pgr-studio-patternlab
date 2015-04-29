@@ -15,6 +15,7 @@
 		e.preventDefault();
 		$(this).toggleClass('active');
 		$('.nav').toggleClass('active');
+		console.log('Clicked');
 	});
 	
 	//Navigation toggle

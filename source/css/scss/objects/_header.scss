@@ -38,6 +38,11 @@
 	overflow: hidden;
 	max-height: 0;
 
+	input {
+		@include border-radius(20px);
+		margin-right: $pad;
+	}
+
 	@media all and (min-width: $bp-med) {
 		float: right;
 		max-height: none;
