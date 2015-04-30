@@ -1012,30 +1012,49 @@ td {
   font-size: 0.8em;
   color: #fff;
 }
+/* line 39, scss/objects/_footer.scss */
+.footer .logo {
+  padding-top: 2em;
+}
+/* line 42, scss/objects/_footer.scss */
+.footer .tag-list {
+  width: 100%;
+}
+/* line 45, scss/objects/_footer.scss */
+.footer .tag-list li {
+  background: #333;
+  border: 1px solid #808080;
+  color: #f9f9f9;
+  float: left;
+  font-size: 0.8em;
+  padding: 0.5em;
+  padding-left: 0.5em;
+  margin: 0.25em;
+}
 
-/* line 43, scss/objects/_footer.scss */
+/* line 60, scss/objects/_footer.scss */
 .nav-footer {
   margin: -1em -1em 1em;
 }
-/* line 46, scss/objects/_footer.scss */
+/* line 63, scss/objects/_footer.scss */
 .nav-footer li {
   border-bottom: 1px solid #333;
 }
 @media all and (min-width: 46.8em) {
-  /* line 46, scss/objects/_footer.scss */
+  /* line 63, scss/objects/_footer.scss */
   .nav-footer li {
     border: 0;
     float: left;
   }
 }
-/* line 55, scss/objects/_footer.scss */
+/* line 72, scss/objects/_footer.scss */
 .nav-footer a {
   display: block;
   padding: 1em;
 }
 
 @media all and (min-width: 46.8em) {
-  /* line 61, scss/objects/_footer.scss */
+  /* line 78, scss/objects/_footer.scss */
   .copyright {
     float: right;
   }

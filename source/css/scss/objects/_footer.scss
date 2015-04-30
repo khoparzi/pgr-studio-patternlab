@@ -34,8 +34,25 @@
 	}
 	.adr {
 		font-size: 0.8em;
-		color: $white;
+		color: $white;	
 	}
+	.logo {
+		padding-top: $pad-double;
+	}
+	.tag-list {
+		width: 100%;
+	}
+	.tag-list li {
+		background: $gray-dark;
+		border: 1px solid $gray;
+		color: $gray-light;
+		float: left;
+		font-size: 0.8em;
+		padding: $pad-half;
+		padding-left: $pad-half;
+		margin: $pad-quarter;
+	}
+
 
 }
 
