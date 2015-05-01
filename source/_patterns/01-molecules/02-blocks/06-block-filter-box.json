@@ -1,0 +1,24 @@
+{
+	"eventfilters": [
+		{
+			"class": "workshop",
+			"url": "/workshops/",
+			"name": "Workshops"
+		},
+		{
+			"class": "conference",
+			"url": "/conferences/",
+			"name": "Conferences"
+		},
+		{
+			"class": "networking",
+			"url": "/networking/",
+			"name": "Networking"
+		},
+		{
+			"class": "seminar",
+			"url": "/seminars/",
+			"name": "Seminars"
+		}
+	]
+}

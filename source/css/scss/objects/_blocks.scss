@@ -137,11 +137,11 @@
 	}
 }
 
-.blackbar {
+.filterbar {
 	@extend .cf;
 	@extend .g-max5;
 }
-.blackbar ul {
+.filterbar ul {
 	list-style: none;
 	li {
 		float: left;
