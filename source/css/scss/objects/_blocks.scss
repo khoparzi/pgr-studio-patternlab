@@ -58,6 +58,7 @@
 	}
 
 	.b-thumb {
+		position: relative;
 		@media all and (min-width: $bp-small-2) {
 			display: table-cell;
 			vertical-align: top;	
@@ -69,6 +70,16 @@
 				  width: 100%;
 				  height: auto;
 	 		}
+	 		.date-block {
+				color: $white;
+				background: transparentize($gray, 0.4);
+				font-weight: bold;
+				position: absolute;
+				top: 1em;
+				left: 1em;
+				padding: $pad;
+				width: 66px;
+			}
  		}
 	}
 
