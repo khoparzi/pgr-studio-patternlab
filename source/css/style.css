@@ -54,7 +54,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $VARIABLES
 \*------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,600);
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,600);
 /*------------------------------------*\
     $MIXINS
@@ -95,12 +95,12 @@ header, footer, nav, section, article, hgroup, figure {
 \*------------------------------------*/
 /* Clearfix */
 /* line 6, scss/base/_global-classes.scss */
-.cf, .l-two-col, [role=main], .blackbar, .date-list {
+.cf, .l-two-col, [role=main], .filterbar, .date-list {
   *zoom: 1;
 }
 
 /* line 9, scss/base/_global-classes.scss */
-.cf:before, .l-two-col:before, [role=main]:before, .blackbar:before, .date-list:before, .cf:after, .l-two-col:after, [role=main]:after, .blackbar:after, .date-list:after {
+.cf:before, .l-two-col:before, [role=main]:before, .filterbar:before, .date-list:before, .cf:after, .l-two-col:after, [role=main]:after, .filterbar:after, .date-list:after {
   content: " ";
   /* 1 */
   display: table;
@@ -108,7 +108,7 @@ header, footer, nav, section, article, hgroup, figure {
 }
 
 /* line 14, scss/base/_global-classes.scss */
-.cf:after, .l-two-col:after, [role=main]:after, .blackbar:after, .date-list:after {
+.cf:after, .l-two-col:after, [role=main]:after, .filterbar:after, .date-list:after {
   clear: both;
 }
 
@@ -216,7 +216,7 @@ header, footer, nav, section, article, hgroup, figure {
 /* line 1, scss/base/_main.scss */
 body {
   background: #fff;
-  font: 100%/1.5 "Avenir", sans-serif;
+  font: 100%/1.5 "Roboto", sans-serif;
   -webkit-text-size-adjust: 100%;
   color: #333;
 }
@@ -629,26 +629,26 @@ td {
 /* Grid 3up */
 @media all and (min-width: 46.8em) {
   /* line 101, scss/objects/_layout.scss */
-  .g-3up > .gi {
+  .g-3up > .gi, .events-list .event-item > .gi {
     float: left;
     width: 50%;
   }
   /* line 105, scss/objects/_layout.scss */
-  .g-3up > .gi:nth-of-type(2n+1) {
+  .g-3up > .gi:nth-of-type(2n+1), .events-list .event-item > .gi:nth-of-type(2n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 50em) {
   /* line 112, scss/objects/_layout.scss */
-  .g-3up > .gi {
+  .g-3up > .gi, .events-list .event-item > .gi {
     width: 33.3333333%;
   }
   /* line 115, scss/objects/_layout.scss */
-  .g-3up > .gi:nth-of-type(2n+1) {
+  .g-3up > .gi:nth-of-type(2n+1), .events-list .event-item > .gi:nth-of-type(2n+1) {
     clear: none;
   }
   /* line 119, scss/objects/_layout.scss */
-  .g-3up > .gi:nth-of-type(3n+1) {
+  .g-3up > .gi:nth-of-type(3n+1), .events-list .event-item > .gi:nth-of-type(3n+1) {
     clear: left;
   }
 }
@@ -733,53 +733,53 @@ td {
 
 /* Grid 5up */
 /* line 211, scss/objects/_layout.scss */
-.g-max5 > .gi, .blackbar > .gi {
+.g-max5 > .gi, .filterbar > .gi {
   float: left;
   width: 50%;
 }
 /* line 215, scss/objects/_layout.scss */
-.g-max5 > .gi:nth-of-type(2n+1), .blackbar > .gi:nth-of-type(2n+1) {
+.g-max5 > .gi:nth-of-type(2n+1), .filterbar > .gi:nth-of-type(2n+1) {
   clear: both;
 }
 @media all and (min-width: 39.8em) {
   /* line 221, scss/objects/_layout.scss */
-  .g-max5 > .gi, .blackbar > .gi {
+  .g-max5 > .gi, .filterbar > .gi {
     width: 33.3333333%;
   }
   /* line 224, scss/objects/_layout.scss */
-  .g-max5 > .gi:nth-of-type(2n+1), .blackbar > .gi:nth-of-type(2n+1) {
+  .g-max5 > .gi:nth-of-type(2n+1), .filterbar > .gi:nth-of-type(2n+1) {
     clear: none;
   }
   /* line 228, scss/objects/_layout.scss */
-  .g-max5 > .gi:nth-of-type(3n+1), .blackbar > .gi:nth-of-type(3n+1) {
+  .g-max5 > .gi:nth-of-type(3n+1), .filterbar > .gi:nth-of-type(3n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 46.8em) {
   /* line 235, scss/objects/_layout.scss */
-  .g-max5 > .gi, .blackbar > .gi {
+  .g-max5 > .gi, .filterbar > .gi {
     width: 25%;
   }
   /* line 238, scss/objects/_layout.scss */
-  .g-max5 > .gi:nth-of-type(3n+1), .blackbar > .gi:nth-of-type(3n+1) {
+  .g-max5 > .gi:nth-of-type(3n+1), .filterbar > .gi:nth-of-type(3n+1) {
     clear: none;
   }
   /* line 242, scss/objects/_layout.scss */
-  .g-max5 > .gi:nth-of-type(4n+1), .blackbar > .gi:nth-of-type(4n+1) {
+  .g-max5 > .gi:nth-of-type(4n+1), .filterbar > .gi:nth-of-type(4n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 48em) {
   /* line 249, scss/objects/_layout.scss */
-  .g-max5 > .gi, .blackbar > .gi {
+  .g-max5 > .gi, .filterbar > .gi {
     width: 20%;
   }
   /* line 252, scss/objects/_layout.scss */
-  .g-max5 > .gi:nth-of-type(4n+1), .blackbar > .gi:nth-of-type(4n+1) {
+  .g-max5 > .gi:nth-of-type(4n+1), .filterbar > .gi:nth-of-type(4n+1) {
     clear: none;
   }
   /* line 256, scss/objects/_layout.scss */
-  .g-max5 > .gi:nth-of-type(5n+1), .blackbar > .gi:nth-of-type(5n+1) {
+  .g-max5 > .gi:nth-of-type(5n+1), .filterbar > .gi:nth-of-type(5n+1) {
     clear: left;
   }
 }
@@ -787,7 +787,7 @@ td {
 /* Grid 2/3 */
 @media all and (min-width: 46.8em) {
   /* line 264, scss/objects/_layout.scss */
-  .gi-2-3 {
+  .gi-2-3, .events-list .event-item div {
     float: left;
     width: 66.666666%;
   }
@@ -795,7 +795,7 @@ td {
 
 @media all and (min-width: 46.8em) {
   /* line 271, scss/objects/_layout.scss */
-  .gi-1-3 {
+  .gi-1-3, .events-list .event-item .item-thumbnail {
     float: left;
     width: 33.333333%;
   }
@@ -869,14 +869,13 @@ td {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  margin-right: 1em;
 }
 @media all and (min-width: 46.8em) {
   /* line 37, scss/objects/_header.scss */
   .search-form {
     float: right;
     max-height: none;
-    margin: 0.65em 0.5em 0 0;
+    margin: 0.65em 1em 0 0;
   }
 }
 
@@ -990,37 +989,40 @@ td {
 /* line 18, scss/objects/_footer.scss */
 .footer h1 {
   color: #fff;
+  clear: both;
   font-size: 1.2em;
   border-bottom: 2px solid #E82829;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
-/* line 25, scss/objects/_footer.scss */
+/* line 26, scss/objects/_footer.scss */
 .footer h2 {
   color: #fff;
   font-size: 1em;
   font-weight: normal;
   padding-top: 1em;
 }
-/* line 31, scss/objects/_footer.scss */
+/* line 32, scss/objects/_footer.scss */
 .footer p {
   color: #808080;
   font-size: 0.8em;
 }
-/* line 35, scss/objects/_footer.scss */
+/* line 36, scss/objects/_footer.scss */
 .footer .adr {
-  font-size: 0.8em;
   color: #fff;
-}
-/* line 39, scss/objects/_footer.scss */
-.footer .logo {
+  font-size: 0.8em;
+  line-height: 1.8;
   padding-top: 2em;
 }
 /* line 42, scss/objects/_footer.scss */
-.footer .tag-list {
-  width: 100%;
+.footer .tel {
+  padding-bottom: 2em;
 }
 /* line 45, scss/objects/_footer.scss */
+.footer .tag-list {
+  padding-bottom: 10em;
+}
+/* line 48, scss/objects/_footer.scss */
 .footer .tag-list li {
   background: #333;
   border: 1px solid #808080;
@@ -1032,29 +1034,29 @@ td {
   margin: 0.25em;
 }
 
-/* line 60, scss/objects/_footer.scss */
+/* line 63, scss/objects/_footer.scss */
 .nav-footer {
   margin: -1em -1em 1em;
 }
-/* line 63, scss/objects/_footer.scss */
+/* line 66, scss/objects/_footer.scss */
 .nav-footer li {
   border-bottom: 1px solid #333;
 }
 @media all and (min-width: 46.8em) {
-  /* line 63, scss/objects/_footer.scss */
+  /* line 66, scss/objects/_footer.scss */
   .nav-footer li {
     border: 0;
     float: left;
   }
 }
-/* line 72, scss/objects/_footer.scss */
+/* line 75, scss/objects/_footer.scss */
 .nav-footer a {
   display: block;
   padding: 1em;
 }
 
 @media all and (min-width: 46.8em) {
-  /* line 78, scss/objects/_footer.scss */
+  /* line 81, scss/objects/_footer.scss */
   .copyright {
     float: right;
   }
@@ -1462,16 +1464,16 @@ td {
 }
 
 /* line 144, scss/objects/_blocks.scss */
-.blackbar ul {
+.filterbar ul {
   list-style: none;
 }
 /* line 146, scss/objects/_blocks.scss */
-.blackbar ul li {
+.filterbar ul li {
   float: left;
   padding: 0 20px;
 }
 /* line 150, scss/objects/_blocks.scss */
-.blackbar ul li a:hover {
+.filterbar ul li a:hover {
   background: #808080;
   color: #fff;
 }
@@ -1589,25 +1591,45 @@ td {
   margin-bottom: 1em;
 }
 
-/* Bullet List */
 /* line 45, scss/objects/_lists.scss */
+.events-list .event-item {
+  clear: both;
+}
+/* line 52, scss/objects/_lists.scss */
+.events-list .event-item .item-thumbnail {
+  position: relative;
+}
+/* line 56, scss/objects/_lists.scss */
+.events-list .event-item .date-block {
+  color: #fff;
+  background: rgba(128, 128, 128, 0.6);
+  font-weight: bold;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  padding: 1em;
+  width: 66px;
+}
+
+/* Bullet List */
+/* line 70, scss/objects/_lists.scss */
 .bullet-list {
   list-style: square;
   margin: 0 0 1em 1.2em;
   line-height: 1.3;
 }
-/* line 50, scss/objects/_lists.scss */
+/* line 75, scss/objects/_lists.scss */
 .bullet-list li {
   margin-bottom: 1em;
 }
 
 /* Text List */
-/* line 56, scss/objects/_lists.scss */
+/* line 81, scss/objects/_lists.scss */
 .text-list {
   margin: 0 0 1em;
   line-height: 1.3;
 }
-/* line 60, scss/objects/_lists.scss */
+/* line 85, scss/objects/_lists.scss */
 .text-list li {
   margin-bottom: 1em;
 }

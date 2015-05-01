@@ -41,6 +41,31 @@
 	}
 }
 
+.events-list {
+	.event-item {
+		@extend .g-3up;
+		clear: both;
+
+		div {
+			@extend .gi-2-3;
+		}
+		.item-thumbnail {
+			@extend .gi-1-3;
+			position: relative;
+		}
+		.date-block {
+			color: $white;
+			background: transparentize($gray, 0.4);
+			font-weight: bold;
+			position: absolute;
+			top: 1em;
+			left: 1em;
+			padding: $pad;
+			width: 66px;
+		}
+	}
+}
+
 /* Bullet List */
 .bullet-list {
 	list-style: square;
