@@ -1,18 +1,20 @@
 <div class="block block-thumb">
-	<div class="b-thumb">
-		<img src="{{img.square.src}}" />
-		<div class="date-block">
-			<span>{{day.long}}</span>
-			<span>{{month.short}}</span>
+	<a href="{{ url }}" class="b-inner">
+		<div class="b-thumb">
+			<img src="{{img.square.src}}" />
+			<div class="date-block">
+				<span>{{day.long}}</span>
+				<span>{{month.short}}</span>
+			</div>
 		</div>
-	</div>
-	<div class="b-text">
-		<h2>{{title}}</h2>
-		<div class="short-description">{{excerpt.short}}</div>
-		{{#excerpt}}
-		<div class="contact-email">{{email}}</div>
-		<div class="description">{{excerpt.long}}</div>
-		{{/excerpt}}
-		<div class="addr">{{location}}</div>
-	</div>
+		<div class="b-text">
+			<h2>{{title}}</h2>
+			<div class="short-description">{{excerpt.short}}</div>
+			{{#excerpt}}
+			<div class="contact-email">{{email}}</div>
+			<div class="description">{{excerpt.long}}</div>
+			{{/excerpt}}
+			<div class="addr">{{location}}</div>
+		</div>
+	</a>
 </div>
