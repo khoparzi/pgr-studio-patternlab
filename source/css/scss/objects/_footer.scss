@@ -17,6 +17,7 @@
 	}
 	h1 {
 		color: $white;
+		clear: both;
 		font-size: 1.2em;
 		border-bottom: 2px solid $red;
 		padding-bottom: $pad;
@@ -33,14 +34,16 @@
 		font-size: 0.8em;
 	}
 	.adr {
+		color: $white;
 		font-size: 0.8em;
-		color: $white;	
-	}
-	.logo {
+		line-height: 1.8;
 		padding-top: $pad-double;
 	}
+	.tel {
+		padding-bottom: $pad-double;
+	}
 	.tag-list {
-		width: 100%;
+		padding-bottom: $pad*10;
 	}
 	.tag-list li {
 		background: $gray-dark;
