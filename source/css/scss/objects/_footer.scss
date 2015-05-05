@@ -29,7 +29,6 @@
 		color: $white;
 		font-size: 1em;
 		font-weight: normal;
-		padding-top: 1em;
 	}
 	p {
 		color: $gray;
@@ -45,8 +44,11 @@
 		margin-top: $pad;
 		margin-bottom: $pad;
 	}
-	.block-thumb .b-text .adr {
-		margin-top: 0;
+	.block-thumb .b-text {
+		.date-block {
+			color: $blue;
+			margin-top: $pad;
+		}
 	}
 	.tag-list {
 		@extend .cf;

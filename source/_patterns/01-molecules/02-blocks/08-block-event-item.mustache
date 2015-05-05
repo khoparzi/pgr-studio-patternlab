@@ -2,21 +2,25 @@
 	<a href="{{ url }}" class="b-inner">
 		<div class="b-thumb">
 			<img src="{{img.square.src}}" />
+			{{#body}}
 			<div class="date-block">
 				<span>{{day.long}}</span>
 				<span>{{month.short}}</span>
 			</div>
+			{{/body}}
 		</div>
 		<div class="b-text">
 			<h2>{{event.title}}</h2>
 			{{#body}}
 			<div class="short-description">{{event.excerpt}}</div>
-			{{#full}}
-			<div class="contact-email">{{email}}</div>
-			<div class="description">{{event.description}}</div>
-			{{/full}}
-			{{/body}}
 			<div class="adr">{{event.location}}</div>
+			{{/body}}
+			{{#footer}}
+			<div class="date-block">
+				<span>{{day.long}}</span>
+				<span>{{month.short}}</span>
+			</div>
+			{{/footer}}
 		</div>
 	</a>
 </div>
