@@ -2,8 +2,9 @@
     $MAIN CONTENT AREA
 \*------------------------------------*/
 [role=main] {
-	padding: $pad-half $pad-half $pad-double;
 	overflow: hidden;
+	padding: 0 $pad-half;
 	@extend .lc;
 	@extend .cf;
+	
 }
