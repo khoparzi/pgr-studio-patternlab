@@ -1852,29 +1852,190 @@ article > * {
 }
 
 /* line 45, scss/objects/_article.scss */
-.event-content div {
+.event-content > div {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
+/* line 49, scss/objects/_article.scss */
+.event-schedule {
+  border: 2px solid #808080;
+}
 /* line 51, scss/objects/_article.scss */
+.event-schedule li {
+  padding: 1em;
+  -webkit-transition: all 0.3s easeout;
+  -moz-transition: all 0.3s easeout;
+  -ms-transition: all 0.3s easeout;
+  -o-transition: all 0.3s easeout;
+  transition: all 0.3s easeout;
+}
+/* line 54, scss/objects/_article.scss */
+.event-schedule li span {
+  display: block;
+}
+
+/* line 60, scss/objects/_article.scss */
+.schedule-overview {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 36px;
+}
+
+/* line 65, scss/objects/_article.scss */
+.schedule-overview li {
+  -moz-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  cursor: pointer;
+  padding: 24px;
+  position: relative;
+}
+
+/* line 74, scss/objects/_article.scss */
+.schedule-overview li:first-child .top {
+  display: none;
+}
+
+/* line 78, scss/objects/_article.scss */
+.schedule-overview li:last-child .bottom {
+  display: none;
+}
+
+/* line 82, scss/objects/_article.scss */
+.schedule-title span {
+  display: block;
+  font-size: 16px;
+}
+
+/* line 87, scss/objects/_article.scss */
+.schedule-title .title {
+  color: #333;
+}
+
+/* line 91, scss/objects/_article.scss */
+.schedule-text {
+  -moz-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  max-height: 0px;
+  opacity: 0;
+}
+
+/* line 99, scss/objects/_article.scss */
+.schedule-overview li:hover {
+  background-color: #f5f5f5;
+}
+
+/* line 103, scss/objects/_article.scss */
+.schedule-overview li:hover .schedule-text {
+  max-height: 300px;
+  opacity: 1;
+  padding-top: 18px;
+}
+
+/* line 109, scss/objects/_article.scss */
+.schedule-overview li:hover .top,
+.schedule-overview li:hover .bottom,
+.schedule-overview li:hover .middle {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 115, scss/objects/_article.scss */
+.schedule-overview li:hover .middle {
+  background: #333;
+}
+
+/* line 119, scss/objects/_article.scss */
+.schedule-with-text .btn,
+.contained-gallery .btn {
+  margin-right: 12px;
+  margin-top: 24px;
+}
+
+/* line 125, scss/objects/_article.scss */
+.schedule-with-text .schedule-overview li {
+  padding-right: 48px;
+}
+
+@media all and (max-width: 1024px) {
+  /* line 130, scss/objects/_article.scss */
+  .schedule-overview li {
+    padding-right: 48px;
+  }
+}
+@media all and (max-width: 767px) {
+  /* line 136, scss/objects/_article.scss */
+  .schedule-with-text .btn,
+  .contained-gallery .btn {
+    margin-bottom: 32px;
+  }
+}
+/* line 142, scss/objects/_article.scss */
+.marker-pin {
+  height: 100%;
+  position: absolute;
+  right: 32px;
+  top: 0px;
+}
+
+/* line 149, scss/objects/_article.scss */
+.marker-pin .top,
+.marker-pin .bottom {
+  -moz-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  height: 50%;
+  position: absolute;
+  width: 2px;
+  z-index: 1;
+}
+
+/* line 161, scss/objects/_article.scss */
+.marker-pin .top {
+  top: 0px;
+}
+
+/* line 165, scss/objects/_article.scss */
+.marker-pin .bottom {
+  bottom: 0px;
+}
+
+/* line 169, scss/objects/_article.scss */
+.marker-pin .middle {
+  -moz-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  height: 18px;
+  margin-top: -9px;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  width: 18px;
+  z-index: 2;
+}
+
+/* line 186, scss/objects/_article.scss */
 .social-share {
   overflow: hidden;
   margin-bottom: 1em;
 }
-/* line 55, scss/objects/_article.scss */
+/* line 190, scss/objects/_article.scss */
 .social-share li {
   float: left;
   margin-right: 0.5em;
 }
-/* line 60, scss/objects/_article.scss */
+/* line 195, scss/objects/_article.scss */
 .social-share a {
   background: #333;
   color: #fff;
   display: block;
   padding: 0.5em;
 }
-/* line 66, scss/objects/_article.scss */
+/* line 201, scss/objects/_article.scss */
 .social-share a:hover {
   background: #808080;
 }

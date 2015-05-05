@@ -42,9 +42,144 @@ article > * {
 		@extend .g-2up;
 	}
 }
-.event-content div {
+.event-content > div {
 	margin-top: 1em;
 	margin-bottom: 1em;
+}
+.event-schedule {
+	border: 2px solid $gray;
+	li {
+		padding: $pad;
+		@include transition(all, 0.3s, easeout);
+		span {
+			display: block;
+		}
+	}
+}
+
+.schedule-overview {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 36px;
+}
+
+.schedule-overview li {
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    cursor: pointer;
+    padding: 24px;
+    position: relative;
+}
+
+.schedule-overview li:first-child .top {
+    display: none;
+}
+
+.schedule-overview li:last-child .bottom {
+    display: none;
+}
+
+.schedule-title span {
+    display: block;
+    font-size: 16px;
+}
+
+.schedule-title .title {
+    color: #333;
+}
+
+.schedule-text {
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    max-height: 0px;
+    opacity: 0;
+}
+
+.schedule-overview li:hover {
+    background-color: #f5f5f5;
+}
+
+.schedule-overview li:hover .schedule-text {
+    max-height: 300px;
+    opacity: 1;
+    padding-top: 18px;
+}
+
+.schedule-overview li:hover .top,
+.schedule-overview li:hover .bottom,
+.schedule-overview li:hover .middle {
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+.schedule-overview li:hover .middle {
+    background: #333;
+}
+
+.schedule-with-text .btn,
+.contained-gallery .btn {
+    margin-right: 12px;
+    margin-top: 24px;
+}
+
+.schedule-with-text .schedule-overview li {
+    padding-right: 48px;
+}
+
+@media all and (max-width: 1024px) {
+    .schedule-overview li {
+        padding-right: 48px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .schedule-with-text .btn,
+    .contained-gallery .btn {
+        margin-bottom: 32px;
+    }
+}
+
+.marker-pin {
+    height: 100%;
+    position: absolute;
+    right: 32px;
+    top: 0px;
+}
+
+.marker-pin .top,
+.marker-pin .bottom {
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    height: 50%;
+    position: absolute;
+    width: 2px;
+    z-index: 1;
+}
+
+.marker-pin .top {
+    top: 0px;
+}
+
+.marker-pin .bottom {
+    bottom: 0px;
+}
+
+.marker-pin .middle {
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    background: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    height: 18px;
+    margin-top: -9px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 18px;
+    z-index: 2;
 }
 
 //Social Share

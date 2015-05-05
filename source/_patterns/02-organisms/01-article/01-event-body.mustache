@@ -26,8 +26,8 @@
                         <p>June 16, 2015 - 8:00 pm</p>
                     </div>
                     <div class="gi">
-                        <h4>Address</h4> Bentley Campus, Perth, WA
-                        <a href="http://maps.google.com/?q=Bentley Campus, Perth, WA" target="_blank" class="map-link">&nbsp;&nbsp;View map <i class="fa fa-angle-right"></i></a>
+                        <h4>Address</h4> {{event.location}}
+                        <a href="http://maps.google.com/?q={{event.location}}" target="_blank" class="map-link">&nbsp;&nbsp;View map <i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
                 <!--/event-info-->
@@ -37,9 +37,10 @@
                 <div>
                     <p>{{event.description}}</p>
                 </div>
+                {{>organisms-event-schedule}}
                 <div class="calendar-import">
-                    <a class="btn btn-default btn-lighter" href="https://www.google.com/calendar/render?dates=20150616T150000/20150616T200000&amp;action=TEMPLATE&amp;text=Exploring The World&amp;location=Bentley Campus, Perth, WA&amp;details=Business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds.">+ GOOGLE CALENDAR</a>&nbsp;
-                    <a href="http://demo.cactusthemes.com/university?ical_id=200" class="btn btn-default btn-lighter">+ ICAL IMPORT</a>
+                    <a class="btn" href="https://www.google.com/calendar/render?dates=20150616T150000/20150616T200000&amp;action=TEMPLATE&amp;text={{event.title}}&amp;location={{event.location}}&amp;details={{event.excerpt}}">+ GOOGLE CALENDAR</a>&nbsp;
+                    <a href="http://demo.cactusthemes.com/university?ical_id=200" class="btn">+ ICAL IMPORT</a>
                 </div>
                 <div class="event-more-detail">
                     <h4>MORE DETAIL</h4>
