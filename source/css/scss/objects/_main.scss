@@ -3,8 +3,7 @@
 \*------------------------------------*/
 [role=main] {
 	overflow: hidden;
-	padding: 0 $pad-half;
+	padding-bottom: $pad-half;
 	@extend .lc;
 	@extend .cf;
-	
 }
