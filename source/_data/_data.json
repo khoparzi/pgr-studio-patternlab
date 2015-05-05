@@ -123,26 +123,26 @@
 		"title": "BOOM! Making Research Memorable",
 		"excerpt": "This event to be linked to the PGR Studio event on 3 July. It can be one long page with a menu at the top, or it could be split over different pages, as it suits the PGR Studio website.",
 		"description": "It’s not just what you have to say, but how you say it that counts. Whether speaking at symposia, lecturing, or taking part in TEDx or PechaKucha events, we all need to get our ideas across with maximum impact. This day of workshops, exercises and talks is designed to inspire you and give you practical tools to take with you. You’ll remember this event a year afterwards… Turner Prize-winner Martin Creed will demonstrate the performance of ideas in action, whilst other sessions will cover comedy and character (James Cook), breathing and meditation (Breathworks), voice and presence (Simon Ratcliffe), and memorisation and language (LiveCanon).",
-		"location": "The Parkside Building, Birmingham City University, B4 7BD",
-		"schedule": [
-			{
-				"time": "9:45-10:15",
-				"description": "Registration / coffee"
-			},
-			{
-				"time": "10:15-10:30",
-				"description": "Welcome and two short presentations: Caterina Moruzzi and one other tba. We’ll begin and end the day with presentations to reflect on how the ideas and skills introduced through the workshops might be incorporated in the practice of delivering research."
-			},
-			{
-				"time": "10:30-11:45 & 11:45-13:00",
-				"title": "Karen Hall – Breathworks: Mindfulness Techniques to enhance communication during presentations",
-				"description": "The Mind that helps create an excellent piece of research is the same Mind that trips us up when we have to present it - training the mind and body to work effectively together in stressful situations is the result of the discipline of mindfulness practice. In this session, you will learn some simple techniques to use every day that will reduce the anxiety, stress or nervousness that prevent you from being at your best when communicating your ideas or making formal presentations."
-			},
-			{
-				"time": "10:30-11:45 & 11:45-13:00",
-				"title": "Simon Ratcliffe: The thought propels the sound",
-				"description": "This session invites you to participate in a series of experiments in which you are the subject of your own investigation. The questions are around how the voice works, why it doesn't, and what is the relationship between body, breath, voice and thinking? We will seek practical answers that address physical habits in the interests of vocal freedom."
-			}
-		]
-	}
+		"location": "The Parkside Building, Birmingham City University, B4 7BD"
+	},
+	"schedule": [
+		{
+			"time": "9:45-10:15",
+			"description": "Registration / coffee"
+		},
+		{
+			"time": "10:15-10:30",
+			"description": "Welcome and two short presentations: Caterina Moruzzi and one other tba. We’ll begin and end the day with presentations to reflect on how the ideas and skills introduced through the workshops might be incorporated in the practice of delivering research."
+		},
+		{
+			"time": "10:30-11:45 & 11:45-13:00",
+			"title": "Karen Hall – Breathworks: Mindfulness Techniques to enhance communication during presentations",
+			"description": "The Mind that helps create an excellent piece of research is the same Mind that trips us up when we have to present it - training the mind and body to work effectively together in stressful situations is the result of the discipline of mindfulness practice. In this session, you will learn some simple techniques to use every day that will reduce the anxiety, stress or nervousness that prevent you from being at your best when communicating your ideas or making formal presentations."
+		},
+		{
+			"time": "10:30-11:45 & 11:45-13:00",
+			"title": "Simon Ratcliffe: The thought propels the sound",
+			"description": "This session invites you to participate in a series of experiments in which you are the subject of your own investigation. The questions are around how the voice works, why it doesn't, and what is the relationship between body, breath, voice and thinking? We will seek practical answers that address physical habits in the interests of vocal freedom."
+		}
+	]
 }
