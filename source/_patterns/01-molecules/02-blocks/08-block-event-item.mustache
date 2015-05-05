@@ -8,13 +8,15 @@
 			</div>
 		</div>
 		<div class="b-text">
-			<h2>{{title}}</h2>
-			<div class="short-description">{{excerpt.short}}</div>
-			{{#excerpt}}
+			<h2>{{event.title}}</h2>
+			{{#body}}
+			<div class="short-description">{{event.excerpt}}</div>
+			{{#full}}
 			<div class="contact-email">{{email}}</div>
-			<div class="description">{{excerpt.long}}</div>
-			{{/excerpt}}
-			<div class="addr">{{location}}</div>
+			<div class="description">{{event.description}}</div>
+			{{/full}}
+			{{/body}}
+			<div class="adr">{{event.location}}</div>
 		</div>
 	</a>
 </div>
