@@ -1,9 +1,9 @@
 .header {
 	background: $white;
 	padding: 1em 0;
-	height: 230px;
 	border-bottom: 1px solid #dbdbdb;
 	@extend .lc;
+
 }
 
 .logo {
@@ -13,6 +13,9 @@
 
 	@media all and (min-width: $bp-med) {
 		max-width: 9rem;
+	}
+	@media all and (min-width: $bp-small) {
+		max-width: 80%;
 	}
 }
 
@@ -43,8 +46,8 @@
 	}
 
 	@media all and (min-width: $bp-med) {
-		float: right;
 		max-height: none;
 		margin: 0.65em 1em 0 0;
+		padding-left: $pad;
 	}
 }
