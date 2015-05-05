@@ -5,3 +5,9 @@
 .section-title {
 	margin-bottom: $space-half;
 }
+
+h1.section-title {
+	background: $gray-light;
+	font-size: 2.5em;
+	padding: $pad-half $pad-quarter;
+}

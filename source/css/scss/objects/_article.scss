@@ -1,8 +1,16 @@
 //Article
-.article-header {
+article header {
+	padding: 0;
 	h1 {
-		font-size: 2.5em;
+		@extend h1.section-title;
 	}
+	div {
+		padding: $pad-half;
+	}
+}
+
+article > * {
+	padding: 0 $pad-half;
 }
 
 .byline {
