@@ -11,6 +11,34 @@
 	margin-bottom: $space-half;
 }
 
+.content-dropcap p:first-child:first-letter {
+  line-height: 58px;
+  padding-top: 2px;
+}
+
+//Event
+.event-detail {
+	@extend .cf;
+	margin-bottom: 2em;
+	.event-speaker {
+		@extend .g-2up;
+		.media {
+			@extend .gi;
+			.avatar {
+				height: 100px;
+				width: 100px;
+			}
+		}
+	}
+	.event-info {
+		@extend .g-2up;
+	}
+}
+.event-content div {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 //Social Share
 .social-share {
 	overflow: hidden;
