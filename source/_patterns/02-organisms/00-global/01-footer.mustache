@@ -4,11 +4,11 @@
 		<div class="g-4up">
 			{{> atoms-footer-contact }}
 			<div class="gi">
-				<h1>Latest Posts</h1>
-				<ul class="post-list">
-					{{# latest-posts }}
-						<li>{{> molecules-media-block(excerpt: false) }}</li>
-					{{/ latest-posts }}
+				<h1>Next Events</h1>
+				<ul class="events-list">
+					{{# event-posts }}
+						<li>{{> molecules-block-event-item(body: false) }}</li>
+					{{/ event-posts }}
 				</ul>
 			</div>
 			<div class="gi">
