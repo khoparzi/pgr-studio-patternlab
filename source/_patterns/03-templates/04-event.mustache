@@ -1,0 +1,25 @@
+<div class="page" id="page">
+    {{> organisms-header }}
+    <div role="main">
+        <article class="article">
+            <header class="event-header">
+                <h1>{{event.title}}</h1>
+            </header>
+            <div class="r-two-col single-event-content">
+                <div class="r-sidebar">
+                    <div class="single-event-meta">
+    		            <div class="item-thumbnail">
+    		                <img width="263" height="263" src="http://placeimg.com/263/263/tech" alt="575"> </div>
+    		            <!--/item-thumbnail-->
+    		            <div class="event-description">{{event.description}}</div>
+    		        </div>
+                </div><!--end r-sidebar-->
+                <div class="r-main">
+                    {{> organisms-event-body }}
+                    {{> molecules-social-share }}
+                </div><!--end l-main-->
+            </div><!--end l-two-col-->  
+        </article><!--end .article-->
+    </div><!--End role=main-->
+    {{> organisms-footer }}
+</div>
