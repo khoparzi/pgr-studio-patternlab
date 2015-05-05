@@ -35,17 +35,27 @@
 		color: $gray;
 		font-size: 0.8em;
 	}
-	.adr {
+	.adr, .org {
 		color: $white;
 		font-size: 0.8em;
 		line-height: 1.8;
 		padding-top: $pad-double;
 	}
-	.tel {
-		padding-bottom: $pad-double;
+	.logo {
+		margin-top: $pad;
+		margin-bottom: $pad;
+	}
+	.block-thumb .b-text .adr {
+		margin-top: 0;
 	}
 	.tag-list {
-		padding-bottom: $pad*10;
+		@extend .cf;
+		padding-bottom: $pad;
+	}
+	@media all and (min-width: $bp-med) {
+		.tag-list {
+			padding-bottom: $pad*5;
+		}
 	}
 	.tag-list li {
 		background: $gray-dark;
@@ -56,6 +66,10 @@
 		padding: $pad-half;
 		padding-left: $pad-half;
 		margin: $pad-quarter;
+	}
+	.events-list, .post-list {
+		@extend .hide-med;
+		@extend .hide-small;
 	}
 
 
