@@ -1,8 +1,11 @@
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha   { 
+	border-bottom: 2px solid $pink;
 	line-height: 1.2;
 	color: $blue;
+	padding-bottom: $pad;
+	margin-bottom: $pad-half;
 }
 
 h2, .beta    { 

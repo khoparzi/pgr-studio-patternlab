@@ -5,34 +5,15 @@
 			{{> molecules-alert:error }}
 		{{/ emergency }}
 
-		{{> molecules-block-filter-box }}
-		{{> molecules-block-date-list }}
-
-		<hr />
-
 		{{# hero }}
 			{{> molecules-block-hero }}
 		{{/ hero}}
 
 		<hr />
 
-		<div class="l-two-col">
-			<div class="l-main">
-				<section class="section latest-posts">
-					<h2 class="section-title">Latest Posts</h2>
-					<ul class="post-list">
-						{{# latest-posts }}
-							<li>{{> molecules-media-block }}</li>
-						{{/ latest-posts }}
-					</ul>
-					<a href="#" class="text-btn">View more posts</a>
-				</section>
-			</div><!--end .l-main-->
-
-			<div class="l-sidebar">
-				{{> organisms-recent-tweets }}
-			</div><!--end .l-sidebar-->
-		</div><!--end .l-two-col-->
+		<h1>Upcoming Events</h1>
+		{{> molecules-block-filter-box }}
+		{{> molecules-block-date-list }}
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>
